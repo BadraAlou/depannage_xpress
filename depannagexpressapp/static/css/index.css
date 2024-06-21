@@ -1,0 +1,17 @@
+.navbar-custom .nav-link:hover {
+    color: #fff; /* Change la couleur du texte au survol */
+    background-color: rgba(255, 0, 0, 0.1); /* Change la couleur de fond au survol */
+}
+
+.navbar-custom {
+    position: fixed; /* Fixe la barre de navigation en haut de la page */
+    width: 100%; /* Occupe toute la largeur */
+    z-index: 1000; /* Assure que la barre de navigation soit au-dessus du contenu */
+}
+
+.myserv
+{
+    height: 400px;
+    background-color: #D3D3D3;
+}
+
