@@ -78,4 +78,6 @@ class Remorquage(models.Model):
 
     def __str__(self):
         return f'Remorquage {self.remorquage_id}'
+    
+    
 

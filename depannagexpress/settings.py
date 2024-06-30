@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-u3(-)=j(gcp#y8+rp!(&3%fj$z&ox_s7ud6q5w*w@j0(ezk11-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['31.207.33.74', 'depannage-xpress.com', 'www.depannage-xpress.com', 'localhost']
 
 
 # Application definition
@@ -85,10 +85,21 @@ WSGI_APPLICATION = 'depannagexpress.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'myproject',
+        'USER': 'myprojectuser',
+        'PASSWORD': 'Test12345',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 
@@ -128,8 +139,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = 'static/'
-STATICFILES_DIRS = [BASE_DIR / 'static']
-STATIC_ROOL = os.path.join(BASE_DIR, 'staticfiles')
+#STATICFILES_DIRS = [BASE_DIR / 'static']
+#STATIC_ROOL = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
