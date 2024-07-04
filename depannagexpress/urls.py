@@ -25,7 +25,11 @@ urlpatterns = [
     path('', include('depannagexpressapp.urls')), 
     path('depannagexpressapp/', include('depannagexpressapp.urls')),
 
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    path('api/', include('api.urls')),
+
+] 
+
+#+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 
 
