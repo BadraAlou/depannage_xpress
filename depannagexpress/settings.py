@@ -25,6 +25,7 @@ SECRET_KEY = 'django-insecure-u3(-)=j(gcp#y8+rp!(&3%fj$z&ox_s7ud6q5w*w@j0(ezk11-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+#ALLOWED_HOSTS = ['31.207.33.74', 'depannage-xpress.com', 'www.depannage-xpress.com', 'localhost', '10.0.2.2']
 ALLOWED_HOSTS = ['31.207.33.74', 'depannage-xpress.com', 'www.depannage-xpress.com', 'localhost']
 
 
